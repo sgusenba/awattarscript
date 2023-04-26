@@ -1,0 +1,100 @@
+[
+    {
+        "endstring": "2023-04-25 01:00:00",
+        "endtime": 1682377200000.0,
+        "marketprice": 99.55,
+        "startstring": "2023-04-25 00:00:00",
+        "starttime": 1682373600000.0
+    },
+    {
+        "endstring": "2023-04-25 02:00:00",
+        "endtime": 1682380800000.0,
+        "marketprice": 96.07,
+        "startstring": "2023-04-25 01:00:00",
+        "starttime": 1682377200000.0
+    },
+    {
+        "endstring": "2023-04-25 03:00:00",
+        "endtime": 1682384400000.0,
+        "marketprice": 94.21,
+        "startstring": "2023-04-25 02:00:00",
+        "starttime": 1682380800000.0
+    },
+    {
+        "endstring": "2023-04-25 04:00:00",
+        "endtime": 1682388000000.0,
+        "marketprice": 91.87,
+        "startstring": "2023-04-25 03:00:00",
+        "starttime": 1682384400000.0
+    },
+    {
+        "endstring": "2023-04-25 05:00:00",
+        "endtime": 1682391600000.0,
+        "marketprice": 91.74,
+        "startstring": "2023-04-25 04:00:00",
+        "starttime": 1682388000000.0
+    },
+    {
+        "endstring": "2023-04-25 06:00:00",
+        "endtime": 1682395200000.0,
+        "marketprice": 97.33,
+        "startstring": "2023-04-25 05:00:00",
+        "starttime": 1682391600000.0
+    },
+    {
+        "endstring": "2023-04-25 11:00:00",
+        "endtime": 1682413200000.0,
+        "marketprice": 97.88,
+        "startstring": "2023-04-25 10:00:00",
+        "starttime": 1682409600000.0
+    },
+    {
+        "endstring": "2023-04-25 12:00:00",
+        "endtime": 1682416800000.0,
+        "marketprice": 89.11,
+        "startstring": "2023-04-25 11:00:00",
+        "starttime": 1682413200000.0
+    },
+    {
+        "endstring": "2023-04-25 13:00:00",
+        "endtime": 1682420400000.0,
+        "marketprice": 85.08,
+        "startstring": "2023-04-25 12:00:00",
+        "starttime": 1682416800000.0
+    },
+    {
+        "endstring": "2023-04-25 14:00:00",
+        "endtime": 1682424000000.0,
+        "marketprice": 81.01,
+        "startstring": "2023-04-25 13:00:00",
+        "starttime": 1682420400000.0
+    },
+    {
+        "endstring": "2023-04-25 15:00:00",
+        "endtime": 1682427600000.0,
+        "marketprice": 73.57,
+        "startstring": "2023-04-25 14:00:00",
+        "starttime": 1682424000000.0
+    },
+    {
+        "endstring": "2023-04-25 16:00:00",
+        "endtime": 1682431200000.0,
+        "marketprice": 73.76,
+        "startstring": "2023-04-25 15:00:00",
+        "starttime": 1682427600000.0
+    },
+    {
+        "endstring": "2023-04-25 17:00:00",
+        "endtime": 1682434800000.0,
+        "marketprice": 81.88,
+        "startstring": "2023-04-25 16:00:00",
+        "starttime": 1682431200000.0
+    },
+    {
+        "endstring": "2023-04-25 18:00:00",
+        "endtime": 1682438400000.0,
+        "marketprice": 92.32,
+        "startstring": "2023-04-25 17:00:00",
+        "starttime": 1682434800000.0
+    }
+]
