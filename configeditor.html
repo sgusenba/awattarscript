@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Config File Editor</title>
+</head>
+<body>
+    <h1>Config File Editor </h1>
+    
+    <label for="configFile">Please select a Configuration File:</label>
+    <input type="file" id="configFile" accept=".ini"><br>
+    
+    <textarea id="configEditor" rows="20" cols="80"></textarea><br>
+    
+    <button id="saveButton">Save</button>
+
+    <script>
+        const configFileInput = document.getElementById('configFile');
+        const configEditor = document.getElementById('configEditor');
+        const saveButton = document.getElementById('saveButton');
+
+        configFileInput.addEventListener('change', function () {
+            const file = configFileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                configEditor.value = e.target.result;
+            };
+
+            reader.readAsText(file);
+        });
+
+        saveButton.addEventListener('click', function () {
+            const updatedConfig = configEditor.value;
+            // You can save the updatedConfig to a file using JavaScript's Blob API or
+            // provide instructions to the user on how to save it manually.
+            alert('Configuration saved locally:\n' + updatedConfig);
+        });
+    </script>
+</body>
+</html>
