@@ -31,8 +31,8 @@ for key in data:
  endtme = float(key['end_timestamp'])
  marketprice = key['marketprice']
  if(float(marketprice)<=float(threshold)) :
-  start = datetime.datetime.fromtimestamp(float(key['starttime'])/1000)
-  end = datetime.datetime.fromtimestamp(float(key['endtime'])/1000)
+  start = datetime.datetime.fromtimestamp(float(key['start_timestamp'])/1000)
+  end = datetime.datetime.fromtimestamp(float(key['end_timestamp'])/1000)
   if(start <= now <= end) :
     print('is within range')
     shellycontrol.toggleState('on')
