@@ -27,33 +27,14 @@ cheap_list = []
 now = datetime.datetime.now()
 
 for key in data:
- starttime = float(key['start_timestamp'])
- endtme = float(key['end_timestamp'])
  marketprice = key['marketprice']
- if(float(marketprice)<=float(threshold)) :
-  start = datetime.datetime.fromtimestamp(float(key['start_timestamp'])/1000)
-  end = datetime.datetime.fromtimestamp(float(key['end_timestamp'])/1000)
-  if(start <= now <= end) :
+ start = datetime.datetime.fromtimestamp(float(key['start_timestamp'])/1000)
+ end = datetime.datetime.fromtimestamp(float(key['end_timestamp'])/1000)
+ if(start <= now <= end) :
+  if(float(marketprice)<=float(threshold)) :
     print('is within range')
     shellycontrol.toggleState('on')
   else :
     shellycontrol.toggleState('off')
     print('shutting down shellys')
-  cheap = {
-     'starttime' : starttime,
-     'endtime' : endtme,
-     'marketprice':marketprice,
-     'startstring':converter.epoch_to_datetime(starttime),
-     'endstring': converter.epoch_to_datetime(endtme)
-  }
-  cheap_list.append(cheap)
-
-# Convert the dictionary to a JSON string
-json_str = json.dumps(cheap_list, indent=4, sort_keys=True)
-
-
-# Write the JSON string to a file
-with open('cheap.json', 'w') as f:
-    f.write(json_str)
-  
-  
+ 
